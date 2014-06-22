@@ -10,6 +10,9 @@
   character = (Character*)[CCBReader load:@"Character"];
   [physicsNode addChild:character];
   [self addObstacle];
+  
+  // Reset the obstacle time so we don't get two obstacles on top of each other
+  timeSinceObstacle = 0.0f;
 }
 
 -(void)update:(CCTime)delta
