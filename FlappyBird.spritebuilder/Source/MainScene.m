@@ -29,6 +29,7 @@
   CCNode *_parallaxContainer;
   CCParallaxNode *_parallaxBackground;
   
+  
     CCNode *_ground1;
     CCNode *_ground2;
     NSArray *_grounds;
@@ -63,12 +64,6 @@
   _clouds = @[_cloud1, _cloud2];
   _bushes = @[_bush1, _bush2];
   
-  CGPoint _cloudParallaxRatio;
-  CGPoint _bushParallaxRatio;
-  
-  CCNode *_parallaxContainer;
-  CCParallaxNode *_parallaxBackground;
-    
     for (CCNode *ground in _grounds) {
         // set collision txpe
         ground.physicsBody.collisionType = @"level";
